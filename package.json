@@ -1,0 +1,29 @@
+{
+  "name": "ui-lib-learn",
+  "version": "1.0.0",
+  "description": "ui lib learn",
+  "main": "dist/index.js",
+  "module": "./dist/index.js",
+  "type": "module",
+  "outputDir": "./dist",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mikhaylov Oleg <dkfolkin@gmail.com>",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.0.2",
+    "typescript": "^5.1.6"
+  }
+}

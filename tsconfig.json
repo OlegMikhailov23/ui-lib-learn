@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",                          
+    "module": "ESNext",                     
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],                             
+    "allowJs": true,                       
+    "jsx": "react",
+    "declaration": true,                   
+    "sourceMap": true,                     
+    "noEmit": true,                       
+    "isolatedModules": true,           
+    "strict": true,                           
+    "noFallthroughCasesInSwitch": true,   
+    "moduleResolution": "node",            
+    "esModuleInterop": true,                 
+    "resolveJsonModule": false,             
+    "emitDeclarationOnly": true,
+    "src": "src",
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"],
+}
