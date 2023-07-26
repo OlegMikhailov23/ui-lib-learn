@@ -12,6 +12,11 @@
     "README.md"
   ],
   "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "rollup -c",
+    "build:packdev": "cross-env NODE_ENV=development npm run build",
+    "build:packprod": "cross-env NODE_ENV=production npm run build",
+    "build:watch": "rollup -c --bundleConfig --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mikhaylov Oleg <dkfolkin@gmail.com>",
@@ -21,10 +26,20 @@
     "react-dom": "*"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@rollup/plugin-typescript": "^11.1.2",
     "@types/react": "^18.2.15",
+    "@types/styled-components": "^5.1.26",
+    "cross-env": "^7.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "styled-components": "^6.0.2",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.26.3",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-visualizer": "^5.9.2",
+    "styled-components": "^5.3.6",
     "typescript": "^5.1.6"
   }
 }

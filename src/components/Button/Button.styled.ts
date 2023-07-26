@@ -11,6 +11,8 @@ export const ButtonStyled = styled.button<ButtonParams>`
   padding: 16px;
   font-size: 12px;
   font-weight: 400;
+  border: none;
+  border-radius: 8px;
 
   ${({ variant }) => {
     switch (variant) {
