@@ -37,4 +37,4 @@ lerna-debug.log*
 
 # Analitics
 stats.html
-bundle-analysis.html
+analysis.html
